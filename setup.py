@@ -6,15 +6,13 @@ package by running "python3 setup.py sdist bdist_wheel"
 import os
 import setuptools
 
-import netapp_ontap
-
 setuptools.setup(
     name=os.getenv("PACKAGE_NAME", "netapp-ontap"),
-    version=netapp_ontap.__version__,
+    version="9.14.1.0",
     author="NetApp",
     author_email="ng-ontap-rest-python-lib@netapp.com",
     description="A library for working with ONTAP's REST APIs simply in Python",
-    long_description=netapp_ontap.__doc__,
+    long_description="See netapp_ontap.__doc__",
     long_description_content_type="text/markdown",
     url="https://devnet.netapp.com/restapi.php",
     project_urls={
